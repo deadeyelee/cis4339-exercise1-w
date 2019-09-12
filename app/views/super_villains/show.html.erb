@@ -4,7 +4,11 @@
   <strong>Name:</strong>
   <%= @super_villain.name %>
 </p>
-
+<p>
+	<% @super_villain.minions.each do |minion| %>
+	<%= minion.name %>,
+	<% end %>
+</p>
 <p>
   <strong>Description:</strong>
   <%= @super_villain.description %>
